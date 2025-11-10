@@ -48,7 +48,7 @@ pip install -r requirements.txt
 4. Create `.env` file with your credentials:
 
 ```env
-ADERESO_TOKEN=your_token_here
+API_TOKEN=your_token_here
 ```
 
 ## Usage
