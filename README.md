@@ -34,3 +34,7 @@ python index.py
 - Opción 1: Modo práctica
 - Opción 2: Desafío real (3 minutos)
 - Opción 3: Práctica múltiple (5 veces)
+
+## Problem
+
+https://recruiting.adere.so/challenge/instructions
