@@ -1,0 +1,36 @@
+# En tu carpeta del proyecto
+# Crea el archivo .gitignore
+```
+
+**Contenido del archivo `.gitignore`:**
+```
+# Variables de entorno
+.env
+
+# Entorno virtual
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+```
+
+### **5. Estructura final de tu proyecto**
+```
+tu-carpeta-adereso/
+├── .env                 ← NO subir a Git (tu token)
+├── .gitignore           ← Subir a Git
+├── index.py             ← Subir a Git
+├── venv/                ← NO subir a Git
+└── README.md            ← Subir a Git (opcional)
