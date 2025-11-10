@@ -1,40 +1,84 @@
-# Adereso Challenge Solver
+# API Integration Challenge
 
-## Configuración
+Automated solver for mathematical problems expressed in natural language using AI and multiple external APIs.
 
-1. Crear entorno virtual:
+## Features
+
+- Natural language interpretation using GPT-4o-mini
+- Integration with multiple REST APIs
+- Automatic expression evaluation
+- Caching system for optimization
+- Connection pooling for performance
+- https://recruiting.adere.so/challenge/instructions
+
+## Setup
+
+### Prerequisites
+
+- Python 3.8+
+- pip
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mtsantiago1230/api-integration-challenge.git
+cd api-integration-challenge
+```
+
+2. Create virtual environment:
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# o
-venv\Scripts\activate     # Windows
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Activate (Linux/Mac)
+source venv/bin/activate
 ```
 
-2. Instalar dependencias:
+3. Install dependencies:
 
 ```bash
-pip install requests python-dotenv
+pip install -r requirements.txt
 ```
 
-3. Crear archivo `.env` con tu token:
+4. Create `.env` file with your credentials:
 
 ```env
-ADERESO_TOKEN=tu_token_aqui
+ADERESO_TOKEN=your_token_here
 ```
 
-4. Ejecutar:
+## Usage
+
+Run the solver:
 
 ```bash
 python index.py
 ```
 
-## Uso
+Options:
 
-- Opción 1: Modo práctica
-- Opción 2: Desafío real (3 minutos)
-- Opción 3: Práctica múltiple (5 veces)
+1. Practice mode - Test with sample problems
+2. Real challenge - 3-minute timed challenge
+3. Quick practice - Run 5 practice rounds
 
-## Problem
+## Architecture
 
-https://recruiting.adere.so/challenge/instructions
+- **AI Integration**: Uses LLM for natural language understanding
+- **API Orchestration**: Coordinates multiple external APIs
+- **Caching**: LRU cache for repeated queries
+- **Error Handling**: Retry logic with exponential backoff
+
+## Technologies
+
+- Python 3.x
+- Requests (HTTP client)
+- python-dotenv (Environment variables)
+- OpenAI GPT-4o-mini (via proxy)
+
+## License
+
+MIT

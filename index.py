@@ -14,11 +14,11 @@ load_dotenv()
 # ============================================
 # CONFIGURACIÓN
 # ============================================
-TOKEN = os.getenv("ADERESO_TOKEN")
+TOKEN = os.getenv("API_TOKEN")
 
 if not TOKEN:
-    print("❌ ERROR: No se encontró ADERESO_TOKEN")
-    print("   Crea un archivo .env con: ADERESO_TOKEN=tu_token")
+    print("❌ ERROR: No se encontró API_TOKEN")
+    print("   Crea un archivo .env con: API_TOKEN=tu_token")
     exit(1)
 
 HEADERS = {
